@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+  <sys_user_role action="INSERT_OR_UPDATE">
+    <sys_id>f9029bc213ba4e77bad6413a3e9a1858</sys_id>
+    <sys_scope display_value="x_1972253_citize_1">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+    <sys_update_name>sys_user_role_f9029bc213ba4e77bad6413a3e9a1858</sys_update_name>
+    <assignable_by/>
+    <can_delegate>true</can_delegate>
+    <description>Full administrative access to the Citizen Complaint system</description>
+    <elevated_privilege>false</elevated_privilege>
+    <grantable>true</grantable>
+    <name>x_1972253_citize_1.admin</name>
+    <scoped_admin>false</scoped_admin>
+    <suffix>admin</suffix>
+  </sys_user_role>
+</record_update>

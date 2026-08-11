@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+  <sys_user_role action="INSERT_OR_UPDATE">
+    <sys_id>15f3d4f2c6b74f8e86ef25714c33b7ea</sys_id>
+    <sys_scope display_value="x_1972253_citize_1">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+    <sys_update_name>sys_user_role_15f3d4f2c6b74f8e86ef25714c33b7ea</sys_update_name>
+    <assignable_by/>
+    <can_delegate>true</can_delegate>
+    <description>Citizen who can submit and track their own complaints</description>
+    <elevated_privilege>false</elevated_privilege>
+    <grantable>true</grantable>
+    <name>x_1972253_citize_1.citizen</name>
+    <scoped_admin>false</scoped_admin>
+    <suffix>citizen</suffix>
+  </sys_user_role>
+</record_update>

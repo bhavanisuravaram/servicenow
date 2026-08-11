@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+  <sys_user_role_contains action="INSERT_OR_UPDATE">
+    <sys_id>792fadc1ec39421f8705ad77f229c997</sys_id>
+    <sys_scope display_value="x_1972253_citize_1">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+    <sys_update_name>sys_user_role_contains_792fadc1ec39421f8705ad77f229c997</sys_update_name>
+    <contains name="x_1972253_citize_1.agent">09936620ab39479ba317555fd8cf4da0</contains>
+    <role name="x_1972253_citize_1.admin">f9029bc213ba4e77bad6413a3e9a1858</role>
+  </sys_user_role_contains>
+</record_update>

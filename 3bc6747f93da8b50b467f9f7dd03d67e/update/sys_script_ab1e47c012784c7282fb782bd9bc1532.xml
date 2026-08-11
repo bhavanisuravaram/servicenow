@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script">
   <sys_script action="INSERT_OR_UPDATE">
     <sys_id>ab1e47c012784c7282fb782bd9bc1532</sys_id>
-    <sys_scope display_value="x_1972253_citize_0">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+    <sys_scope display_value="x_1972253_citize_1">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
     <sys_update_name>sys_script_ab1e47c012784c7282fb782bd9bc1532</sys_update_name>
     <abort_action>false</abort_action>
     <access>package_private</access>
@@ -14,7 +14,7 @@
     <advanced>true</advanced>
     <change_fields>false</change_fields>
     <client_callable>false</client_callable>
-    <collection>x_1972253_citize_0_complaint</collection>
+    <collection>x_1972253_citize_1_complaint</collection>
     <condition/>
     <description>Automatically assigns the responsible department based on complaint category</description>
     <execute_function>false</execute_function>

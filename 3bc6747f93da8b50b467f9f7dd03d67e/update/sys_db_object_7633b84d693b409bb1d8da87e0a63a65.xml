@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
+  <sys_db_object action="INSERT_OR_UPDATE">
+    <sys_id>7633b84d693b409bb1d8da87e0a63a65</sys_id>
+    <sys_scope display_value="x_1972253_citize_1">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+    <sys_update_name>sys_db_object_7633b84d693b409bb1d8da87e0a63a65</sys_update_name>
+    <access>public</access>
+    <actions_access>false</actions_access>
+    <alter_access>false</alter_access>
+    <caller_access/>
+    <client_scripts_access>false</client_scripts_access>
+    <create_access>false</create_access>
+    <create_access_controls>false</create_access_controls>
+    <delete_access>false</delete_access>
+    <is_extendable>true</is_extendable>
+    <label>Citizen Complaint</label>
+    <live_feed_enabled>false</live_feed_enabled>
+    <name>x_1972253_citize_1_complaint</name>
+    <number_ref category="x_1972253_citize_1_complaint" prefix="CMP">92ec9156aa73490593ff52ccdb255bcd</number_ref>
+    <read_access>true</read_access>
+    <scriptable_table>false</scriptable_table>
+    <super_class name="task">a7644e6d61d64c5fb53fda0575784c1a</super_class>
+    <update_access>false</update_access>
+    <user_role/>
+    <ws_access>true</ws_access>
+  </sys_db_object>
+</record_update>

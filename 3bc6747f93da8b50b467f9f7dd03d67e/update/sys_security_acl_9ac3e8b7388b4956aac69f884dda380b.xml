@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
   <sys_security_acl action="INSERT_OR_UPDATE">
     <sys_id>9ac3e8b7388b4956aac69f884dda380b</sys_id>
-    <sys_scope display_value="x_1972253_citize_0">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+    <sys_scope display_value="x_1972253_citize_1">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
     <sys_update_name>sys_security_acl_9ac3e8b7388b4956aac69f884dda380b</sys_update_name>
     <active>true</active>
     <admin_overrides>true</admin_overrides>
@@ -10,7 +10,7 @@
     <condition/>
     <decision_type>allow</decision_type>
     <description>Allow agents and citizens to create complaints</description>
-    <name>x_1972253_citize_0_complaint</name>
+    <name>x_1972253_citize_1_complaint</name>
     <operation display_value="create">create</operation>
     <script/>
     <security_attribute/>
