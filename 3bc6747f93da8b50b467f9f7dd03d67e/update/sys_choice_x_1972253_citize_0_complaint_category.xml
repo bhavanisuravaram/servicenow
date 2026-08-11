@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_choice_set action="INSERT_OR_UPDATE" field="category" table="x_1972253_citize_0_complaint" version="3">
+    <sys_choice_set action="INSERT_OR_UPDATE">
+      <sys_id>804c662cf7de41b59a1c055490eb29fc</sys_id>
+      <element>category</element>
+      <name>x_1972253_citize_0_complaint</name>
+      <sys_class_name>sys_choice_set</sys_class_name>
+      <sys_scope display_value="x_1972253_citize_0">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+      <sys_package display_value="x_1972253_citize_0" source="3bc6747f93da8b50b467f9f7dd03d67e">3bc6747f93da8b50b467f9f7dd03d67e</sys_package>
+      <sys_update_name>sys_choice_x_1972253_citize_0_complaint_category</sys_update_name>
+      <sys_name>category</sys_name>
+    </sys_choice_set>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>98808fc7342647eaa6408f96f7f51845</sys_id>
+      <name>x_1972253_citize_0_complaint</name>
+      <element>category</element>
+      <label>Pothole / Road Damage</label>
+      <value>pothole</value>
+      <sequence>1</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>f087faabd40d4d4b9c02f390ad2ff771</sys_id>
+      <name>x_1972253_citize_0_complaint</name>
+      <element>category</element>
+      <label>Noise Complaint</label>
+      <value>noise</value>
+      <sequence>2</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>10678e68c222442aaa4b8a0c0fa64e36</sys_id>
+      <name>x_1972253_citize_0_complaint</name>
+      <element>category</element>
+      <label>Water Leak / Flooding</label>
+      <value>water_leak</value>
+      <sequence>3</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>8364e3446fea44b5ac37e2556698f913</sys_id>
+      <name>x_1972253_citize_0_complaint</name>
+      <element>category</element>
+      <label>Broken Streetlight</label>
+      <value>streetlight</value>
+      <sequence>4</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>e679f5c8f0d64b189961de269a317844</sys_id>
+      <name>x_1972253_citize_0_complaint</name>
+      <element>category</element>
+      <label>Illegal Dumping / Trash</label>
+      <value>trash</value>
+      <sequence>5</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>efabe4f583ad420c9d86462bea33f8d7</sys_id>
+      <name>x_1972253_citize_0_complaint</name>
+      <element>category</element>
+      <label>Graffiti / Vandalism</label>
+      <value>graffiti</value>
+      <sequence>6</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>7c7d7bdb865445b7a3064b1c7342c3fa</sys_id>
+      <name>x_1972253_citize_0_complaint</name>
+      <element>category</element>
+      <label>Park / Public Space Damage</label>
+      <value>park_damage</value>
+      <sequence>7</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>c62416a581ce463fa8175509b140258d</sys_id>
+      <name>x_1972253_citize_0_complaint</name>
+      <element>category</element>
+      <label>Traffic Signal Issue</label>
+      <value>traffic</value>
+      <sequence>8</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>3c2e5efaf5264e1da09ef91995ffb2ac</sys_id>
+      <name>x_1972253_citize_0_complaint</name>
+      <element>category</element>
+      <label>Sewage / Drain Blockage</label>
+      <value>sewage</value>
+      <sequence>9</sequence>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>708569226a5d4866aa9146c9c605eb1f</sys_id>
+      <name>x_1972253_citize_0_complaint</name>
+      <element>category</element>
+      <label>Other</label>
+      <value>other</value>
+      <sequence>10</sequence>
+      <language>en</language>
+    </sys_choice>
+  </sys_choice_set>
+</record_update>

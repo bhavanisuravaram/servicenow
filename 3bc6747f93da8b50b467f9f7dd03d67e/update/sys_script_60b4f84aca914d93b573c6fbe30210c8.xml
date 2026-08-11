@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script">
+  <sys_script action="INSERT_OR_UPDATE">
+    <sys_id>60b4f84aca914d93b573c6fbe30210c8</sys_id>
+    <sys_scope display_value="x_1972253_citize_0">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+    <sys_update_name>sys_script_60b4f84aca914d93b573c6fbe30210c8</sys_update_name>
+    <abort_action>false</abort_action>
+    <access>package_private</access>
+    <action_delete>false</action_delete>
+    <action_insert>true</action_insert>
+    <action_query>false</action_query>
+    <action_update>true</action_update>
+    <active>true</active>
+    <add_message>false</add_message>
+    <advanced>true</advanced>
+    <change_fields>false</change_fields>
+    <client_callable>false</client_callable>
+    <collection>x_1972253_citize_0_complaint</collection>
+    <condition/>
+    <description>Automatically calculates priority based on complaint category urgency</description>
+    <execute_function>false</execute_function>
+    <filter_condition/>
+    <is_rest>false</is_rest>
+    <message/>
+    <name>Auto Priority Calculation</name>
+    <order>200</order>
+    <priority>100</priority>
+    <rest_method/>
+    <rest_method_text/>
+    <rest_service/>
+    <rest_service_text/>
+    <rest_variables/>
+    <role_conditions/>
+    <script><![CDATA[// Auto-calculates complaint priority based on the category.
+// Priority: 1 (Critical), 2 (High), 3 (Moderate), 4 (Low)
+(function autoCalculatePriority() {
+    var category = current.getValue('category');
+
+    // Only auto-set priority if not already set
+    if (current.getValue('priority')) {
+        return;
+    }
+
+    var priority = '4';
+
+    switch (category) {
+        case 'water_leak':
+        case 'sewage':
+            priority = '1';
+            break;
+        case 'pothole':
+        case 'traffic':
+            priority = '2';
+            break;
+        case 'streetlight':
+        case 'noise':
+            priority = '3';
+            break;
+        case 'trash':
+        case 'graffiti':
+        case 'park_damage':
+        case 'other':
+        default:
+            priority = '4';
+            break;
+    }
+
+    current.setValue('priority', priority);
+})();
+]]></script>
+    <sys_name>Auto Priority Calculation</sys_name>
+    <sys_policy/>
+    <template/>
+    <when>before</when>
+  </sys_script>
+</record_update>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+  <sys_security_acl_role action="INSERT_OR_UPDATE">
+    <sys_id>701a7f30126c45b4a774f5da3666cb3b</sys_id>
+    <sys_scope display_value="x_1972253_citize_0">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+    <sys_update_name>sys_security_acl_role_701a7f30126c45b4a774f5da3666cb3b</sys_update_name>
+    <sys_security_acl>9a488469b512431eb0b8c5aefd85144d</sys_security_acl>
+    <sys_user_role name="x_1972253_citize_0.agent">082eb297ec3d4396ab235e801d0ad4a0</sys_user_role>
+  </sys_security_acl_role>
+</record_update>

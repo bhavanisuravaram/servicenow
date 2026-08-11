@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+  <sys_security_acl action="INSERT_OR_UPDATE">
+    <sys_id>9a488469b512431eb0b8c5aefd85144d</sys_id>
+    <sys_scope display_value="x_1972253_citize_0">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+    <sys_update_name>sys_security_acl_9a488469b512431eb0b8c5aefd85144d</sys_update_name>
+    <active>true</active>
+    <admin_overrides>true</admin_overrides>
+    <advanced>false</advanced>
+    <applies_to/>
+    <condition/>
+    <decision_type>allow</decision_type>
+    <description>Allow agents and admins to update complaints</description>
+    <name>x_1972253_citize_0_complaint</name>
+    <operation display_value="write">write</operation>
+    <script/>
+    <security_attribute/>
+    <type>record</type>
+  </sys_security_acl>
+</record_update>

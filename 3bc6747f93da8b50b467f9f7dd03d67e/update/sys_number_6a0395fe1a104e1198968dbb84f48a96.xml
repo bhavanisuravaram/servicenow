@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+  <sys_number action="INSERT_OR_UPDATE">
+    <sys_id>6a0395fe1a104e1198968dbb84f48a96</sys_id>
+    <sys_scope display_value="x_1972253_citize_0">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+    <sys_update_name>sys_number_6a0395fe1a104e1198968dbb84f48a96</sys_update_name>
+    <category>x_1972253_citize_0_complaint</category>
+    <maximum_digits>7</maximum_digits>
+    <number>1000</number>
+    <prefix>CMP</prefix>
+  </sys_number>
+</record_update>
