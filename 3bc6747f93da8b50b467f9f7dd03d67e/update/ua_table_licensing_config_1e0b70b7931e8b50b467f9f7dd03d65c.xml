@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ua_table_licensing_config">
+    <ua_table_licensing_config action="INSERT_OR_UPDATE">
+        <is_fulfillment>false</is_fulfillment>
+        <license_condition/>
+        <license_model>none</license_model>
+        <license_roles/>
+        <name>x_1972253_citize_0_department</name>
+        <op_delete>true</op_delete>
+        <op_insert>true</op_insert>
+        <op_update>true</op_update>
+        <owner_condition/>
+        <sys_class_name>ua_table_licensing_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 05:28:43</sys_created_on>
+        <sys_id>1e0b70b7931e8b50b467f9f7dd03d65c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1972253_citize_0_department</sys_name>
+        <sys_package display_value="Citizen Complaint AI" source="x_1972253_citize_0">3bc6747f93da8b50b467f9f7dd03d67e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Citizen Complaint AI">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+        <sys_update_name>ua_table_licensing_config_1e0b70b7931e8b50b467f9f7dd03d65c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 05:28:43</sys_updated_on>
+    </ua_table_licensing_config>
+</record_update>
