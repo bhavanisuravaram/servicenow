@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1120000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Automates complaint assignment and notifications based on priority.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>citizen_complaint_automation</internal_name>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Citizen Complaint Record","reference":"x_1972253_citize_0_citizen_complaint","reference_display":"Citizen Complaint","type":"reference","base_type":"reference","usedInstances":{"7e27a2cc-ddac-4c27-86ad-5e59e2d4ab97":["record"]},"attributes":{}},{"name":"Created_1.current.resolution","label":"Trigger - Record Created➛Citizen Complaint Record➛Resolution","reference":"","reference_display":"Resolution","type":"string","base_type":"string","parent_table_name":"x_1972253_citize_0_citizen_complaint","column_name":"resolution","usedInstances":{}},{"name":"Created_1.current.priority","label":"Trigger - Record Created➛Citizen Complaint Record➛Priority","reference":"","reference_display":"Priority","type":"choice","base_type":"choice","parent_table_name":"x_1972253_citize_0_citizen_complaint","column_name":"priority","choices":[{"parameters":{"name":"x_1972253_citize_0_citizen_complaint","dependent_values":[""],"dependent_values_map":{"":"Critical"}},"sequence":0.0,"label":"Critical","used":false,"selected":false,"image":"","reference":false,"rawLabel":"Critical","missing":false,"value":"critical"},{"parameters":{"name":"x_1972253_citize_0_citizen_complaint","dependent_values":[""],"dependent_values_map":{"":"High"}},"sequence":1.0,"label":"High","used":false,"selected":false,"image":"","reference":false,"rawLabel":"High","missing":false,"value":"high"},{"parameters":{"name":"x_1972253_citize_0_citizen_complaint","dependent_values":[""],"dependent_values_map":{"":"Medium"}},"sequence":2.0,"label":"Medium","used":false,"selected":false,"image":"","reference":false,"rawLabel":"Medium","missing":false,"value":"medium"},{"parameters":{"name":"x_1972253_citize_0_citizen_complaint","dependent_values":[""],"dependent_values_map":{"":"Low"}},"sequence":3.0,"label":"Low","used":false,"selected":false,"image":"","reference":false,"rawLabel":"Low","missing":false,"value":"low"}],"usedInstances":{"8052521b-af72-4c00-b013-f444b3f1a514":["condition"]}}]</label_cache>
+        <master_snapshot>b56491b39312cb50b467f9f7dd03d637</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Citizen Complaint Automation</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>6cc519779312cb50b467f9f7dd03d610</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 07:06:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>565155fb93de8b50b467f9f7dd03d666</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Citizen Complaint Automation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Citizen Complaint AI" source="x_1972253_citize_0">3bc6747f93da8b50b467f9f7dd03d67e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Citizen Complaint AI">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+        <sys_update_name>sys_hub_flow_565155fb93de8b50b467f9f7dd03d666</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 07:25:29</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record>7bc599779312cb50b467f9f7dd03d622</version_record>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=565155fb93de8b50b467f9f7dd03d666"/>
+    <sys_variable_value action="delete_multiple" query="document_key=565155fb93de8b50b467f9f7dd03d666"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1972253_citize_0_citizen_complaint">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 07:25:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6cc519779312cb50b467f9f7dd03d610</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Citizen Complaint AI">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 07:25:28</sys_updated_on>
+        <table>x_1972253_citize_0_citizen_complaint</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>565155fb93de8b50b467f9f7dd03d666</identifier>
+        <identifier_type>flow</identifier_type>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 07:25:29</sys_created_on>
+        <sys_id>e4c519779312cb50b467f9f7dd03d611</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 07:25:29</sys_updated_on>
+        <trigger display_value="">6cc519779312cb50b467f9f7dd03d610</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=565155fb93de8b50b467f9f7dd03d666^sys_idNOT INe4c519779312cb50b467f9f7dd03d611"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=565155fb93de8b50b467f9f7dd03d666"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=565155fb93de8b50b467f9f7dd03d666^sys_idNOT INaa5155fb93de8b50b467f9f7dd03d667"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>565155fb93de8b50b467f9f7dd03d666</id>
+        <name>Citizen Complaint Automation</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 07:06:13</sys_created_on>
+        <sys_id>aa5155fb93de8b50b467f9f7dd03d667</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 07:06:13</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=aa5155fb93de8b50b467f9f7dd03d667"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=565155fb93de8b50b467f9f7dd03d666^sys_idNOT IN6391113f93de8b50b467f9f7dd03d6b7,fd919dfb93de8b50b467f9f7dd03d6f0"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Citizen Complaint Automation">565155fb93de8b50b467f9f7dd03d666</model>
+        <model_id>565155fb93de8b50b467f9f7dd03d666</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_565155fb93de8b50b467f9f7dd03d666</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 07:07:22</sys_created_on>
+        <sys_id>6391113f93de8b50b467f9f7dd03d6b7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Citizen Complaint AI">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 07:18:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6391113f93de8b50b467f9f7dd03d6b7"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Citizen Complaint Automation">565155fb93de8b50b467f9f7dd03d666</model>
+        <model_id>565155fb93de8b50b467f9f7dd03d666</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_565155fb93de8b50b467f9f7dd03d666</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 07:07:15</sys_created_on>
+        <sys_id>fd919dfb93de8b50b467f9f7dd03d6f0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Citizen Complaint AI">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 07:18:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fd919dfb93de8b50b467f9f7dd03d6f0"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=565155fb93de8b50b467f9f7dd03d666"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=565155fb93de8b50b467f9f7dd03d666"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=565155fb93de8b50b467f9f7dd03d666^sys_idNOT INc991d5fb93de8b50b467f9f7dd03d658"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Citizen Complaint Automation">565155fb93de8b50b467f9f7dd03d666</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 07:07:12</sys_created_on>
+        <sys_id>c991d5fb93de8b50b467f9f7dd03d658</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 07:19:23</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227bOBD9FUFPu4AL6GLHcd5aJ8UG6DZYx919CFKBEkmbWJp0JUqJt8i/71AXW9bFl8hp3ZcgJmnyzOGZM0M/fDc58gk3r8wp8jkxeyYTioQC8elqSWBY6WFPoIWeWyCBkZLhyrxSYUx6Jg3lYkoWS44ULKaIRzAoQ0xC88rumQniMblfRbcYdoLvp9vke5r5NHx+9uzR0HEGrhcwxf4jnpX/I7xA6s0BEyzHLIL/V3/n3xpnS4xxaUkwZxyHRJhXD489c4lCOFBpMN8rU0wjCmiARg6xAtd2HceynMu+7V+4vu1gFxHLgg2r7FQiUA0kbcInz4oITPCamRp/IUH4TvDVesVcx5FytUDPEcRnXl1aeh0lgD0g2dz6o5dzkg0Hc8kCcrdUTIpsJMOZTUoeL8TnDL9mk1AUc1WwCSNxBPuRpYasQeSI6P1cPk2KAz8ykUaXT3IZIL7+hJQKmR8rEmnCKeNAvZdxE8k4TNFPbsZ3k2vvn/fT8R83E29ycz+d3I6nN9fmSxqX9y3WO2YIcyxeFs7LWgIfGeH6AqNV5MFN9swoCNlSvQ8USwodvvQ22h5LgVnKSk3fQTEVbeu7iH6XwC2rVeJB6cRC5l9v/qqrOBs8TrcXFwhhglp069OSbsuRN0BTDSSUo9ul4HzkEAn3LesniTi3qddqeCEx4deb7UyYnM1A1UwsY6XZekJCRZ6SHsLYK/GolwKmfaLOYnvZq+AwFvAFb30fdR2ntK35+8QigPsAWXhPvsUZ6e/AkmhBVXoCLKef8hMmsTAk3CP8MYI4BKaUUdgcvV2gWU4wbMhJoEqaoF+i8qc/WRQxMSsF0YYhZagGYX06SM0oAs6gRB2xPJ4yxetXklS4raT60Xlu25T6hDrWUGe5bbk+ta2hNUAUu5YVOKU8r4NpRakqgnmTfD8u26NUqvwAJVYpzsFb5Vw5SEbJtgYLErREclMZnwaafSJojoZWMUf3KHdcyzIbvt5W567QTtwZIJwg+AY+1CQP9EfK5RMYc3dv9FHw7yyUscBVd9JHGEwYmxXGbzmdv7+dT1IZkt14tleck0NuLiVpYvc4Q3Sp7Y9In1jggy5YoD8YjfwAOZQOL4bEsSuGuDm7EdAvYYR7FNdIapspNqolaRLZEXbYAWDNGo8G2N0UkVi1WmI2dwbmV3n27H/waKE/zeH9DOBDj2vDq7nijDNMirnTJn3t6GTTAnVtiujlKBjYw2EwhIcPeADtEx/ZfWeARsML93JQ8YAalF0wVQMzP+Q5pB+yGkiLP3zJps7rff9GVTy9lIgopatS51IuoPdNt0DZmaX6qW/JSF1HhsZnKd7dbtYZ9wTKYvpEfqOafggofe3GD0XlSzWv9RiA5AOMbyHRnWsLZ2f3SKsoKtmOtfMjjfQvByPqNvsRHTX50QZMO8yz704OzJ+kNROb2pRD9Z80plFrX/EKCVdkUm44dnREpyLFPjkpztuR4nbuwopcbH2ZvgbsL1Tv0ibkhEVPQyCepGUvv5YGTBhwpsGokf+QSbDhrww1J8Awh+4bzjc0mK4mvqPG1JGt9f1TcWXdfq30wbCRt2bnV9Uqukm2HzUdKxvBQzQYuC2d9qj62m4CtAfv2de4o3MmaUrBnYXuuH2rezaWupJktxVxYBE7adTNlaxb1I21bF/U3avUrt8KGlCcaf15/B94d16S9R8AAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=565155fb93de8b50b467f9f7dd03d666^sys_idNOT IN81b3d5fb93de8b50b467f9f7dd03d65d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Citizen Complaint Automation">565155fb93de8b50b467f9f7dd03d666</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>8052521b-af72-4c00-b013-f444b3f1a514</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 07:16:29</sys_created_on>
+        <sys_id>81b3d5fb93de8b50b467f9f7dd03d65d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Citizen Complaint AI">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 07:29:51</sys_updated_on>
+        <ui_id>7e27a2cc-ddac-4c27-86ad-5e59e2d4ab97</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K8jPUZQQYIW3CYQ0qWulduKlqyLHvimWnI/ZDoUh/vuuEydE0HVU6gtanuL7YZ9zfU7ytCeCkxkZAQ/CaThhURhFwyAY3ozCZBIl4ZBHFCAkHslpBlipgBWK43pDZWUD+/1cATXA49BnlVKQm8MB81zoUtLdypVhhK2F5Jgns6dnj5RU4Y4GFJntT1KXQpI0AYmlDy2mU4xmV9o1L1iVIa5YtMFb17lwmcG3BWawycIJA4/A1kDOAYGkVGrwSEZzTk2hdmRmVIUBJM3vc7nrKtYiNw3RjG61+I0njwJblwIyY24I3TJ2A2rC6YIa+og7M1Opbl6FYKCbmXBIaSXNvB9rCu5LI4q8aTE0kW13Iassv2smQroNevdRaQQBpeVpkTe00sd18frQglyKvB6JoygLRmW3osYokVTGwtkTkFDPOKNlKfKXuFTFRtTNCCXzXyQu/FQWr3imFi+5T5nF7eNUqb/E+KIOr6gSlsR33AabDx7ROz2XVOsjFZxh/KuySBpijkJcT6EeQVwrwTYzJUrzFY/agAN+8Jzok/F7CmPTo6B6ex6Fv43D6ZfhcBzFTBi87jhwL3mMhPFqrR7OfDBvSgbzXsnHjHEB7NYYP2o5vE3DeeMsdtvvHdw1CeeM8ac54+aanOFoXL01/mWIYPjuJ7enpNoDumcGbaip9M8qCCKOgBAt8HPx/6XqY/q/AGWr/6UAyfUbsFvxgzWhgbihcWIAlxysXLL7PXyaC8JJUD9X5IX/5i/x/Afmq7mOHAkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=81b3d5fb93de8b50b467f9f7dd03d65d"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=565155fb93de8b50b467f9f7dd03d666"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=565155fb93de8b50b467f9f7dd03d666^sys_idNOT INe70259bb93de8b50b467f9f7dd03d6de"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a4441d739312cb50b467f9f7dd03d6f3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Citizen Complaint Automation">565155fb93de8b50b467f9f7dd03d666</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 07:09:17</sys_created_on>
+        <sys_id>e70259bb93de8b50b467f9f7dd03d6de</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Citizen Complaint AI">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 07:24:51</sys_updated_on>
+        <ui_id>8052521b-af72-4c00-b013-f444b3f1a514</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8lUJnQdAjNhrfghQBCrQN0AS5tIGwIil7UYpkScqOaujfu9TDNhIHfaDH3sRZ7u7McKB9pFtvWu/u9ZVzuFbR6stjHKEKGH3vIwWNiFYR04qjR63KAYijLcg2FOiTozMSuocjwjYouRXTNAOWeryw0Wr/rOQ7I0oJlZDUeOctqjW1I6dTnUKdXbKMFfmyyNM0f3uRVcuiynJegICC7s2N1zO5Nx8GJH6VddhHuJs3acsDrSyNI/HkheKCVtcgnYijBhQHr213QKwAfqvkEdig8qPiBp4c/qDZ+WIRLtaCNLLJjsOxnKyaXdLIxK0JBEfEQyVnC7VsG/Vp1BFMFjW00p+Y3DqaJ0wgHVhMlOq7jd59nhfeoBoETkWpGcjDCTzZULVeuPAwQoqGBpUNGEPmlMbqLQ7NxKVJ1pIOSS31jpaGpCTAAvGEPILkhvB3A/wAFoOKjzSGmkeaFThk5ZAqGuctSegHW8rvbSA0CpyklKMbdMExi8Zf0Z6tmFj38ctInqRxv7+mR/KCl1nCWkse+MRY1BZ91/df2zQtOA31GHx4kdw/7P4XKb+ERb3I0sX5lF8sz6X8TL5fj3b+i2iHx/jNZKdp+j/ap9FGV44RnbQNy/862Y8hxuMGN+aGC4aOiNwH7P38Tw6FjgKA7BTaafstSDhi/U/18oNn3QUAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=565155fb93de8b50b467f9f7dd03d666"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=565155fb93de8b50b467f9f7dd03d666"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_565155fb93de8b50b467f9f7dd03d666</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 07:07:25</sys_created_on>
+        <sys_id>40a1113f93de8b50b467f9f7dd03d6be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Citizen Complaint AI" source="x_1972253_citize_0">3bc6747f93da8b50b467f9f7dd03d67e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Citizen Complaint AI">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 07:07:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_565155fb93de8b50b467f9f7dd03d666</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 07:07:21</sys_created_on>
+        <sys_id>8791113f93de8b50b467f9f7dd03d635</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Citizen Complaint AI" source="x_1972253_citize_0">3bc6747f93da8b50b467f9f7dd03d67e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Citizen Complaint AI">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 07:07:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_565155fb93de8b50b467f9f7dd03d666"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_565155fb93de8b50b467f9f7dd03d666"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>29000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Automates complaint assignment and notifications based on priority.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>citizen_complaint_automation</internal_name>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛Citizen Complaint Record","reference":"x_1972253_citize_0_citizen_complaint","reference_display":"Citizen Complaint","type":"reference","base_type":"reference","usedInstances":{"7e27a2cc-ddac-4c27-86ad-5e59e2d4ab97":["record"]},"attributes":{}},{"name":"Created_1.current.resolution","label":"Trigger - Record Created➛Citizen Complaint Record➛Resolution","reference":"","reference_display":"Resolution","type":"string","base_type":"string","parent_table_name":"x_1972253_citize_0_citizen_complaint","column_name":"resolution","usedInstances":{}},{"name":"Created_1.current.priority","label":"Trigger - Record Created➛Citizen Complaint Record➛Priority","reference":"","reference_display":"Priority","type":"choice","base_type":"choice","parent_table_name":"x_1972253_citize_0_citizen_complaint","column_name":"priority","choices":[{"parameters":{"name":"x_1972253_citize_0_citizen_complaint","dependent_values":[""],"dependent_values_map":{"":"Critical"}},"sequence":0.0,"label":"Critical","used":false,"selected":false,"image":"","reference":false,"rawLabel":"Critical","missing":false,"value":"critical"},{"parameters":{"name":"x_1972253_citize_0_citizen_complaint","dependent_values":[""],"dependent_values_map":{"":"High"}},"sequence":1.0,"label":"High","used":false,"selected":false,"image":"","reference":false,"rawLabel":"High","missing":false,"value":"high"},{"parameters":{"name":"x_1972253_citize_0_citizen_complaint","dependent_values":[""],"dependent_values_map":{"":"Medium"}},"sequence":2.0,"label":"Medium","used":false,"selected":false,"image":"","reference":false,"rawLabel":"Medium","missing":false,"value":"medium"},{"parameters":{"name":"x_1972253_citize_0_citizen_complaint","dependent_values":[""],"dependent_values_map":{"":"Low"}},"sequence":3.0,"label":"Low","used":false,"selected":false,"image":"","reference":false,"rawLabel":"Low","missing":false,"value":"low"}],"usedInstances":{"8052521b-af72-4c00-b013-f444b3f1a514":["condition"]}}]</label_cache>
+        <master>true</master>
+        <name>Citizen Complaint Automation</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Citizen Complaint Automation">565155fb93de8b50b467f9f7dd03d666</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 07:19:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b56491b39312cb50b467f9f7dd03d637</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Citizen Complaint AI">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 07:25:22</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=b56491b39312cb50b467f9f7dd03d637"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b56491b39312cb50b467f9f7dd03d637"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=b56491b39312cb50b467f9f7dd03d637"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=b56491b39312cb50b467f9f7dd03d637^sys_idNOT INf56491b39312cb50b467f9f7dd03d69c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>b56491b39312cb50b467f9f7dd03d637</id>
+        <name>Citizen Complaint Automation</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 07:19:33</sys_created_on>
+        <sys_id>f56491b39312cb50b467f9f7dd03d69c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 07:19:33</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=f56491b39312cb50b467f9f7dd03d69c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=b56491b39312cb50b467f9f7dd03d637^sys_idNOT IN2a6491b39312cb50b467f9f7dd03d6c8,ce6491b39312cb50b467f9f7dd03d69d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Citizen Complaint Automation">b56491b39312cb50b467f9f7dd03d637</model>
+        <model_id>b56491b39312cb50b467f9f7dd03d637</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_b56491b39312cb50b467f9f7dd03d637</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 07:19:36</sys_created_on>
+        <sys_id>2a6491b39312cb50b467f9f7dd03d6c8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Citizen Complaint AI">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 07:25:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2a6491b39312cb50b467f9f7dd03d6c8"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Citizen Complaint Automation">b56491b39312cb50b467f9f7dd03d637</model>
+        <model_id>b56491b39312cb50b467f9f7dd03d637</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_b56491b39312cb50b467f9f7dd03d637</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 07:19:34</sys_created_on>
+        <sys_id>ce6491b39312cb50b467f9f7dd03d69d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Citizen Complaint AI">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 07:25:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ce6491b39312cb50b467f9f7dd03d69d"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=b56491b39312cb50b467f9f7dd03d637"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b56491b39312cb50b467f9f7dd03d637"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=b56491b39312cb50b467f9f7dd03d637^sys_idNOT INa474d1b39312cb50b467f9f7dd03d68e"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Citizen Complaint Automation">b56491b39312cb50b467f9f7dd03d637</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 07:19:44</sys_created_on>
+        <sys_id>a474d1b39312cb50b467f9f7dd03d68e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 07:19:44</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227bOBD9FUFPu4AL6GLHcd5aJ8UG6DZYx919CFKBEkmbWJp0JUqJt8i/71AXW9bFl8hp3ZcgJmnyzOGZM0M/fDc58gk3r8wp8jkxeyYTioQC8elqSWBY6WFPoIWeWyCBkZLhyrxSYUx6Jg3lYkoWS44ULKaIRzAoQ0xC88rumQniMblfRbcYdoLvp9vke5r5NHx+9uzR0HEGrhcwxf4jnpX/I7xA6s0BEyzHLIL/V3/n3xpnS4xxaUkwZxyHRJhXD489c4lCOFBpMN8rU0wjCmiARg6xAtd2HceynMu+7V+4vu1gFxHLgg2r7FQiUA0kbcInz4oITPCamRp/IUH4TvDVesVcx5FytUDPEcRnXl1aeh0lgD0g2dz6o5dzkg0Hc8kCcrdUTIpsJMOZTUoeL8TnDL9mk1AUc1WwCSNxBPuRpYasQeSI6P1cPk2KAz8ykUaXT3IZIL7+hJQKmR8rEmnCKeNAvZdxE8k4TNFPbsZ3k2vvn/fT8R83E29ycz+d3I6nN9fmSxqX9y3WO2YIcyxeFs7LWgIfGeH6AqNV5MFN9swoCNlSvQ8USwodvvQ22h5LgVnKSk3fQTEVbeu7iH6XwC2rVeJB6cRC5l9v/qqrOBs8TrcXFwhhglp069OSbsuRN0BTDSSUo9ul4HzkEAn3LesniTi3qddqeCEx4deb7UyYnM1A1UwsY6XZekJCRZ6SHsLYK/GolwKmfaLOYnvZq+AwFvAFb30fdR2ntK35+8QigPsAWXhPvsUZ6e/AkmhBVXoCLKef8hMmsTAk3CP8MYI4BKaUUdgcvV2gWU4wbMhJoEqaoF+i8qc/WRQxMSsF0YYhZagGYX06SM0oAs6gRB2xPJ4yxetXklS4raT60Xlu25T6hDrWUGe5bbk+ta2hNUAUu5YVOKU8r4NpRakqgnmTfD8u26NUqvwAJVYpzsFb5Vw5SEbJtgYLErREclMZnwaafSJojoZWMUf3KHdcyzIbvt5W567QTtwZIJwg+AY+1CQP9EfK5RMYc3dv9FHw7yyUscBVd9JHGEwYmxXGbzmdv7+dT1IZkt14tleck0NuLiVpYvc4Q3Sp7Y9In1jggy5YoD8YjfwAOZQOL4bEsSuGuDm7EdAvYYR7FNdIapspNqolaRLZEXbYAWDNGo8G2N0UkVi1WmI2dwbmV3n27H/waKE/zeH9DOBDj2vDq7nijDNMirnTJn3t6GTTAnVtiujlKBjYw2EwhIcPeADtEx/ZfWeARsML93JQ8YAalF0wVQMzP+Q5pB+yGkiLP3zJps7rff9GVTy9lIgopatS51IuoPdNt0DZmaX6qW/JSF1HhsZnKd7dbtYZ9wTKYvpEfqOafggofe3GD0XlSzWv9RiA5AOMbyHRnWsLZ2f3SKsoKtmOtfMjjfQvByPqNvsRHTX50QZMO8yz704OzJ+kNROb2pRD9Z80plFrX/EKCVdkUm44dnREpyLFPjkpztuR4nbuwopcbH2ZvgbsL1Tv0ibkhEVPQyCepGUvv5YGTBhwpsGokf+QSbDhrww1J8Awh+4bzjc0mK4mvqPG1JGt9f1TcWXdfq30wbCRt2bnV9Uqukm2HzUdKxvBQzQYuC2d9qj62m4CtAfv2de4o3MmaUrBnYXuuH2rezaWupJktxVxYBE7adTNlaxb1I21bF/U3avUrt8KGlCcaf15/B94d16S9R8AAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=b56491b39312cb50b467f9f7dd03d637^sys_idNOT IN5074d1b39312cb50b467f9f7dd03d68c"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Citizen Complaint Automation">b56491b39312cb50b467f9f7dd03d637</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id>8052521b-af72-4c00-b013-f444b3f1a514</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 07:19:43</sys_created_on>
+        <sys_id>5074d1b39312cb50b467f9f7dd03d68c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Citizen Complaint AI">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 07:19:43</sys_updated_on>
+        <ui_id>7e27a2cc-ddac-4c27-86ad-5e59e2d4ab97</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K8jPUZQQYIW3CYQ0qWulduKlqyLHvimWnI/ZDoUh/vuuEydE0HVU6gtanuL7YZ9zfU7ytCeCkxkZAQ/CaThhURhFwyAY3ozCZBIl4ZBHFCAkHslpBlipgBWK43pDZWUD+/1cATXA49BnlVKQm8MB81zoUtLdypVhhK2F5Jgns6dnj5RU4Y4GFJntT1KXQpI0AYmlDy2mU4xmV9o1L1iVIa5YtMFb17lwmcG3BWawycIJA4/A1kDOAYGkVGrwSEZzTk2hdmRmVIUBJM3vc7nrKtYiNw3RjG61+I0njwJblwIyY24I3TJ2A2rC6YIa+og7M1Opbl6FYKCbmXBIaSXNvB9rCu5LI4q8aTE0kW13Iassv2smQroNevdRaQQBpeVpkTe00sd18frQglyKvB6JoygLRmW3osYokVTGwtkTkFDPOKNlKfKXuFTFRtTNCCXzXyQu/FQWr3imFi+5T5nF7eNUqb/E+KIOr6gSlsR33AabDx7ROz2XVOsjFZxh/KuySBpijkJcT6EeQVwrwTYzJUrzFY/agAN+8Jzok/F7CmPTo6B6ex6Fv43D6ZfhcBzFTBi87jhwL3mMhPFqrR7OfDBvSgbzXsnHjHEB7NYYP2o5vE3DeeMsdtvvHdw1CeeM8ac54+aanOFoXL01/mWIYPjuJ7enpNoDumcGbaip9M8qCCKOgBAt8HPx/6XqY/q/AGWr/6UAyfUbsFvxgzWhgbihcWIAlxysXLL7PXyaC8JJUD9X5IX/5i/x/Afmq7mOHAkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5074d1b39312cb50b467f9f7dd03d68c"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=b56491b39312cb50b467f9f7dd03d637"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=b56491b39312cb50b467f9f7dd03d637^sys_idNOT IN8874d1b39312cb50b467f9f7dd03d689"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">a4441d739312cb50b467f9f7dd03d6f3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Citizen Complaint Automation">b56491b39312cb50b467f9f7dd03d637</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 07:19:42</sys_created_on>
+        <sys_id>8874d1b39312cb50b467f9f7dd03d689</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Citizen Complaint AI">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 07:25:21</sys_updated_on>
+        <ui_id>8052521b-af72-4c00-b013-f444b3f1a514</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0PPxvijCWveSkph0K2wlr5sxVxLciImS54+knom/31XtuOENmMN3ePerCPdq3OO7sEd0d413tkHfWWtWCmy+PYUEaECht8dUVBzsiBUKyac0KrogYhsQPqwgZ9M2EZC+3hA6FpIZvjYrQGDNY4bsuhebAmGBVUCVXpJU5pn8zxLkuzjRVrO8zLNWA4ccmwooeQSjy73ND7c9kj0R36ubQJunRFqNa5vxy73e1AbFlilSUT4s+OKceRTgbQ8IjUoBk6bdkIMB3an5AFYC+UGwTU8W/ELL8xms3Cw4iiRjm5My2J0aoCra3CAVDx13kzGaUG5HcxhvAIv3fIYGw7cNUHqUOKglPtqLX2tvgyOkKnB0cN4iyR4E5QG6qOO6n6tt1/3LG+E6l0ZN6WmIKcVOPSu9C7w6QiXvMZGRQ1Ng44WjdEb0RcjlzpeSVzEldRbvDRMVww0EI/RWIhvEL/u4UcwIqj4jG2weKBZghW06CcR26FNnOwiYlu7lGDtQSS6W/z0geIgeRRXDP6EEmpE467w5g0fdeyi14N9NNNdt8S3dpwVaUy9QVdc3BihjXDtbvfdJ0nOsKkTwZlX839m9XlZuYRZNUuT2emsXMxPZeVESs4MSPaXgITXeWM+kiT5H5B3B0TYYhjrUVt/+T/Mx1MIw3Dn5DUVFqk9BOzT/v8QNlocLkGPoa02P4KoA7b7DREmK61pBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b56491b39312cb50b467f9f7dd03d637"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=b56491b39312cb50b467f9f7dd03d637"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b56491b39312cb50b467f9f7dd03d637</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 07:19:35</sys_created_on>
+        <sys_id>126491b39312cb50b467f9f7dd03d6c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Citizen Complaint AI" source="x_1972253_citize_0">3bc6747f93da8b50b467f9f7dd03d67e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Citizen Complaint AI">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 07:19:35</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_b56491b39312cb50b467f9f7dd03d637</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 07:19:38</sys_created_on>
+        <sys_id>8b64d1b39312cb50b467f9f7dd03d626</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Citizen Complaint AI" source="x_1972253_citize_0">3bc6747f93da8b50b467f9f7dd03d67e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Citizen Complaint AI">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 07:19:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_b56491b39312cb50b467f9f7dd03d637"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_b56491b39312cb50b467f9f7dd03d637"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>565155fb93de8b50b467f9f7dd03d666</sys_id>
+        <latest_snapshot>b56491b39312cb50b467f9f7dd03d637</latest_snapshot>
+        <compiler_build>glide-australia-02-11-2026__patch3-05-25-2026_06-12-2026_1106.zip</compiler_build>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=565155fb93de8b50b467f9f7dd03d666^sys_idNOT IN6d7415b39312cb50b467f9f7dd03d61a"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"@class":"com.snc.process_flow.engine.serialization.plan_data.ChunkingPlanData","chunk_data":{"table":"sys_flow_trigger_plan","id":"6d7415b39312cb50b467f9f7dd03d61a","name":"plan","plan_signature":null},"plan_data":"CHUNKING_PLAN"}</plan>
+        <plan_id>565155fb93de8b50b467f9f7dd03d666</plan_id>
+        <snapshot>64c6153b9312cb50b467f9f7dd03d6dd</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 07:19:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6d7415b39312cb50b467f9f7dd03d61a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 07:25:29</sys_updated_on>
+        <trigger display_value="">6cc519779312cb50b467f9f7dd03d610</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=565155fb93de8b50b467f9f7dd03d666"/>
+</record_update>
