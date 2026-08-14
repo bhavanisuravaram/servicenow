@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_1972253_citize_0.officer" name="x_1972253_citize_0.officer">80d6b47f93da8b50b467f9f7dd03d6cd</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 05:10:16</sys_created_on>
+        <sys_id>48d6b47f93da8b50b467f9f7dd03d6cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>80d6b47f93da8b50b467f9f7dd03d6cd</sys_name>
+        <sys_package display_value="Citizen Complaint AI" source="x_1972253_citize_0">3bc6747f93da8b50b467f9f7dd03d67e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Citizen Complaint AI">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+        <sys_update_name>sys_embedded_help_role_48d6b47f93da8b50b467f9f7dd03d6cf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 05:10:16</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>
