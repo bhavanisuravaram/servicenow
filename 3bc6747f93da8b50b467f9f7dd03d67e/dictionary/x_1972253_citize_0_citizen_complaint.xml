@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="4387bcbf93da8b50b467f9f7dd03d679" label="Citizen Complaint" max_length="40" name="x_1972253_citize_0_citizen_complaint" type="collection">
+        <element label="Landmark" max_length="40" name="landmark" type="string"/>
+        <element label="Citizen" max_length="32" name="citizen" reference="sys_user" type="reference"/>
+        <element label="Assigned To" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element label="Location" max_length="40" name="location" type="string"/>
+        <element label="AI Recommendation" max_length="40000" name="ai_recommendation" type="string"/>
+        <element label="Resolution" max_length="40" name="resolution" type="string"/>
+        <element choice="3" label="Category" max_length="40" name="category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Public Park" sequence="6" value="public_park"/>
+                <element inactive_on_update="false" label="Drainage" sequence="4" value="drainage"/>
+                <element inactive_on_update="false" label="Street Light" sequence="2" value="street_light"/>
+                <element inactive_on_update="false" label="Others" sequence="7" value="others"/>
+                <element inactive_on_update="false" label="Road Damage" sequence="3" value="road_damage"/>
+                <element inactive_on_update="false" label="Garbage" sequence="1" value="garbage"/>
+                <element inactive_on_update="false" label="Water Leakage" sequence="0" value="water_leakage"/>
+                <element inactive_on_update="false" label="Electricity" sequence="5" value="electricity"/>
+            </choice>
+        </element>
+        <element label="Assigned Department" max_length="32" name="assigned_department" reference="x_1972253_citize_0_department" type="reference"/>
+        <element label="Description" max_length="40000" name="description" type="string"/>
+        <element choice="3" label="Priority" max_length="40" name="priority" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Critical" sequence="0" value="critical"/>
+                <element inactive_on_update="false" label="Low" sequence="3" value="low"/>
+                <element inactive_on_update="false" label="High" sequence="1" value="high"/>
+                <element inactive_on_update="false" label="Medium" sequence="2" value="medium"/>
+            </choice>
+        </element>
+        <element label="AI Routed" max_length="40" name="ai_routed" type="boolean"/>
+        <element choice="3" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Closed" sequence="4" value="closed"/>
+                <element inactive_on_update="false" label="In Progress" sequence="2" value="in_progress"/>
+                <element inactive_on_update="false" label="Assigned" sequence="1" value="assigned"/>
+                <element inactive_on_update="false" label="New" sequence="0" value="new"/>
+                <element inactive_on_update="false" label="Resloved" sequence="3" value="resloved"/>
+            </choice>
+        </element>
+        <element label="Complaint Title" max_length="40" name="complaint_title" type="string"/>
+        <element label="Ai Summary" max_length="40000" name="ai_summary" type="string"/>
+        <index name="index">
+            <element name="assigned_to"/>
+        </index>
+        <index name="index2">
+            <element name="citizen"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="7633b84d693b409bb1d8da87e0a63a65" extends="task" label="Citizen Complaint" name="x_1972253_citize_1_complaint" type="collection">
+        <element choice="1" label="Complaint Category" mandatory="true" max_length="40" name="category" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Broken Streetlight" sequence="4" value="streetlight"/>
+                <element inactive_on_update="false" label="Noise Complaint" sequence="2" value="noise"/>
+                <element inactive_on_update="false" label="Other" sequence="10" value="other"/>
+                <element inactive_on_update="false" label="Park / Public Space Damage" sequence="7" value="park_damage"/>
+                <element inactive_on_update="false" label="Sewage / Drain Blockage" sequence="9" value="sewage"/>
+                <element inactive_on_update="false" label="Water Leak / Flooding" sequence="3" value="water_leak"/>
+                <element inactive_on_update="false" label="Illegal Dumping / Trash" sequence="5" value="trash"/>
+                <element inactive_on_update="false" label="Pothole / Road Damage" sequence="1" value="pothole"/>
+                <element inactive_on_update="false" label="Traffic Signal Issue" sequence="8" value="traffic"/>
+                <element inactive_on_update="false" label="Graffiti / Vandalism" sequence="6" value="graffiti"/>
+            </choice>
+        </element>
+        <element label="Resolution Notes" max_length="4000" name="resolution_notes" type="multi_two_lines"/>
+        <element label="Reporter Email" max_length="255" name="reporter_email" type="email"/>
+        <element label="Location / Address" mandatory="true" max_length="255" name="location_address" type="string"/>
+        <element label="Reporter Name" mandatory="true" max_length="100" name="reporter_name" type="string"/>
+        <element label="Reporter Phone" max_length="20" name="reporter_phone" type="string"/>
+        <element choice="1" label="Responsible Department" max_length="40" name="department" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Police / Code Enforcement" sequence="4" value="police"/>
+                <element inactive_on_update="false" label="Public Works" sequence="1" value="public_works"/>
+                <element inactive_on_update="false" label="Transportation" sequence="6" value="transportation"/>
+                <element inactive_on_update="false" label="Sanitation" sequence="2" value="sanitation"/>
+                <element inactive_on_update="false" label="General Services" sequence="7" value="general"/>
+                <element inactive_on_update="false" label="Parks &amp; Recreation" sequence="5" value="parks"/>
+                <element inactive_on_update="false" label="Water &amp; Utilities" sequence="3" value="utilities"/>
+            </choice>
+        </element>
+        <element label="Reviewed By" max_length="32" name="reviewed_by" reference="sys_user" type="reference"/>
+    </element>
+</database>
