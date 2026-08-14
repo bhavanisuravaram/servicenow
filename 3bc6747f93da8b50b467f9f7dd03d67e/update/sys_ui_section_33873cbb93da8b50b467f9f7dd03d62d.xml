@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="33873cbb93da8b50b467f9f7dd03d62d" sys_domain="global" table="x_1972253_citize_0_citizen_complaint" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 05:24:36</sys_created_on>
+            <sys_id>c61a3437931e8b50b467f9f7dd03d645</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1972253_citize_0_citizen_complaint" sys_domain="global" view="Default view">33873cbb93da8b50b467f9f7dd03d62d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 05:24:36</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>landmark</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 05:24:36</sys_created_on>
+            <sys_id>0e1a3437931e8b50b467f9f7dd03d646</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1972253_citize_0_citizen_complaint" sys_domain="global" view="Default view">33873cbb93da8b50b467f9f7dd03d62d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 05:24:36</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>citizen</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 05:24:36</sys_created_on>
+            <sys_id>c61a3437931e8b50b467f9f7dd03d647</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1972253_citize_0_citizen_complaint" sys_domain="global" view="Default view">33873cbb93da8b50b467f9f7dd03d62d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 05:24:36</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 05:24:36</sys_created_on>
+            <sys_id>821a3437931e8b50b467f9f7dd03d648</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1972253_citize_0_citizen_complaint" sys_domain="global" view="Default view">33873cbb93da8b50b467f9f7dd03d62d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 05:24:36</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>location</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 05:24:36</sys_created_on>
+            <sys_id>4e1a3437931e8b50b467f9f7dd03d648</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1972253_citize_0_citizen_complaint" sys_domain="global" view="Default view">33873cbb93da8b50b467f9f7dd03d62d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 05:24:36</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 05:24:36</sys_created_on>
+            <sys_id>0a1a3437931e8b50b467f9f7dd03d649</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1972253_citize_0_citizen_complaint" sys_domain="global" view="Default view">33873cbb93da8b50b467f9f7dd03d62d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 05:24:36</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>resolution</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 05:24:36</sys_created_on>
+            <sys_id>c21a3437931e8b50b467f9f7dd03d64a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1972253_citize_0_citizen_complaint" sys_domain="global" view="Default view">33873cbb93da8b50b467f9f7dd03d62d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 05:24:36</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>category</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 05:24:37</sys_created_on>
+            <sys_id>8e1a3437931e8b50b467f9f7dd03d64a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1972253_citize_0_citizen_complaint" sys_domain="global" view="Default view">33873cbb93da8b50b467f9f7dd03d62d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 05:24:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_department</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 05:24:37</sys_created_on>
+            <sys_id>4a1a3437931e8b50b467f9f7dd03d64b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1972253_citize_0_citizen_complaint" sys_domain="global" view="Default view">33873cbb93da8b50b467f9f7dd03d62d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 05:24:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 05:24:37</sys_created_on>
+            <sys_id>161a3437931e8b50b467f9f7dd03d64c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1972253_citize_0_citizen_complaint" sys_domain="global" view="Default view">33873cbb93da8b50b467f9f7dd03d62d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 05:24:37</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 05:24:37</sys_created_on>
+            <sys_id>de1a3437931e8b50b467f9f7dd03d64c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1972253_citize_0_citizen_complaint" sys_domain="global" view="Default view">33873cbb93da8b50b467f9f7dd03d62d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 05:24:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 05:24:37</sys_created_on>
+            <sys_id>9a1a3437931e8b50b467f9f7dd03d64d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1972253_citize_0_citizen_complaint" sys_domain="global" view="Default view">33873cbb93da8b50b467f9f7dd03d62d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 05:24:37</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>priority</element>
+            <position>12</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 05:24:37</sys_created_on>
+            <sys_id>561a3437931e8b50b467f9f7dd03d64e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1972253_citize_0_citizen_complaint" sys_domain="global" view="Default view">33873cbb93da8b50b467f9f7dd03d62d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 05:24:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ai_routed</element>
+            <position>13</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 05:24:37</sys_created_on>
+            <sys_id>121a3437931e8b50b467f9f7dd03d64f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1972253_citize_0_citizen_complaint" sys_domain="global" view="Default view">33873cbb93da8b50b467f9f7dd03d62d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 05:24:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>14</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 05:24:37</sys_created_on>
+            <sys_id>da1a3437931e8b50b467f9f7dd03d64f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1972253_citize_0_citizen_complaint" sys_domain="global" view="Default view">33873cbb93da8b50b467f9f7dd03d62d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 05:24:37</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>15</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 05:24:38</sys_created_on>
+            <sys_id>961a3437931e8b50b467f9f7dd03d650</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1972253_citize_0_citizen_complaint" sys_domain="global" view="Default view">33873cbb93da8b50b467f9f7dd03d62d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 05:24:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>complaint_title</element>
+            <position>16</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 05:24:38</sys_created_on>
+            <sys_id>521a3437931e8b50b467f9f7dd03d651</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1972253_citize_0_citizen_complaint" sys_domain="global" view="Default view">33873cbb93da8b50b467f9f7dd03d62d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 05:24:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>17</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 05:24:38</sys_created_on>
+            <sys_id>2e1a3437931e8b50b467f9f7dd03d651</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1972253_citize_0_citizen_complaint" sys_domain="global" view="Default view">33873cbb93da8b50b467f9f7dd03d62d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 05:24:38</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ai_summary</element>
+            <position>18</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 05:24:38</sys_created_on>
+            <sys_id>661a3437931e8b50b467f9f7dd03d66b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1972253_citize_0_citizen_complaint" sys_domain="global" view="Default view">33873cbb93da8b50b467f9f7dd03d62d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 05:24:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_1972253_citize_0_citizen_complaint</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-01 05:13:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>33873cbb93da8b50b467f9f7dd03d62d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1972253_citize_0_citizen_complaint</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Citizen Complaint AI" source="x_1972253_citize_0">3bc6747f93da8b50b467f9f7dd03d67e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Citizen Complaint AI">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+            <sys_update_name>sys_ui_section_33873cbb93da8b50b467f9f7dd03d62d</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-01 05:13:32</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
