@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 05:28:52</sys_created_on>
+        <sys_id>a41b74b7931e8b50b467f9f7dd03d62a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1972253_citize_0_department.x_1972253_citize_0.officer</sys_name>
+        <sys_package display_value="Citizen Complaint AI" source="x_1972253_citize_0">3bc6747f93da8b50b467f9f7dd03d67e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Citizen Complaint AI">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+        <sys_security_acl display_value="x_1972253_citize_0_department">c81b34b7931e8b50b467f9f7dd03d6d6</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_a41b74b7931e8b50b467f9f7dd03d62a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 05:28:52</sys_updated_on>
+        <sys_user_role display_value="x_1972253_citize_0.officer" name="x_1972253_citize_0.officer">80d6b47f93da8b50b467f9f7dd03d6cd</sys_user_role>
+    </sys_security_acl_role>
+</record_update>
