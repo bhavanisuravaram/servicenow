@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>resolution</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 06:57:31</sys_created_on>
+        <sys_id>b82f41b793de8b50b467f9f7dd03d6fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>resolution</sys_name>
+        <sys_package display_value="Citizen Complaint AI" source="x_1972253_citize_0">3bc6747f93da8b50b467f9f7dd03d67e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Citizen Complaint AI">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+        <sys_update_name>sys_ui_policy_action_b82f41b793de8b50b467f9f7dd03d6fd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 06:57:31</sys_updated_on>
+        <table>x_1972253_citize_0_citizen_complaint</table>
+        <ui_policy display_value="Displays the Resolution field only when the complaint status is Resolved.">f0cdc1b393de8b50b467f9f7dd03d6e4</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=b82f41b793de8b50b467f9f7dd03d6fd"/>
+</record_update>
