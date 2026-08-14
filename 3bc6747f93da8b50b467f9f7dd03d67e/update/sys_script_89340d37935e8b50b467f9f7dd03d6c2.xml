@@ -11,14 +11,14 @@
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_1972253_citize_1_complaint</collection>
+        <collection>x_1972253_citize_0_citizen_complaint</collection>
         <condition/>
-        <description>Automatically assigns the responsible department based on complaint category</description>
+        <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>Auto Department Assignment</name>
+        <name>Auto Assign Department</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -27,66 +27,75 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[// Auto-assigns the responsible department based on the complaint category.
-(function autoAssignDepartment() {
-    var category = current.getValue('category');
+        <script><![CDATA[(function executeRule(current, previous) {
 
-    // Only auto-assign if department is not already set
-    if (current.getValue('department')) {
-        return;
-    }
+    var deptName = "";
 
-    var department = 'general';
+    switch (current.getDisplayValue('category')) {
 
-    switch (category) {
-        case 'pothole':
-            department = 'public_works';
+        case "water_leakage":
+            deptName = "Water Department";
             break;
-        case 'traffic':
-            department = 'transportation';
+
+        case "garbage":
+            deptName = "Sanitation Department";
             break;
-        case 'noise':
-        case 'graffiti':
-            department = 'police';
+
+        case "street_light":
+            deptName = "Electrical Department";
             break;
-        case 'water_leak':
-        case 'sewage':
-            department = 'utilities';
+
+        case "road_damage":
+            deptName = "Roads Department";
             break;
-        case 'streetlight':
-            department = 'public_works';
+
+        case "drainage":
+            deptName = "Sanitation Department";
             break;
-        case 'trash':
-            department = 'sanitation';
+
+        case "electricity":
+            deptName = "Electrical Department";
             break;
-        case 'park_damage':
-            department = 'parks';
-            break;
-        default:
-            department = 'general';
+
+        case "public_park":
+            deptName = "Parks Department";
             break;
     }
 
-    current.setValue('department', department);
-})();
-]]></script>
+    if (deptName != "") {
+
+        var dept = new GlideRecord('x_1972253_citize_0_department');
+        dept.addQuery('department_name', deptName);
+        dept.query();
+
+        if (dept.next()) {
+            current.assigned_department = dept.getUniqueValue();
+			current.ai_routed=true;
+        }
+		else{
+			current.ai_routed=false;
+		}
+
+    }
+
+})(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-08-11 11:36:32</sys_created_on>
+        <sys_created_on>2026-08-01 06:14:30</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>ab1e47c012784c7282fb782bd9bc1532</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Auto Department Assignment</sys_name>
+        <sys_id>89340d37935e8b50b467f9f7dd03d6c2</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Auto Assign Department</sys_name>
         <sys_overrides/>
         <sys_package display_value="Citizen Complaint AI" source="x_1972253_citize_0">3bc6747f93da8b50b467f9f7dd03d67e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Citizen Complaint AI">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
-        <sys_update_name>sys_script_ab1e47c012784c7282fb782bd9bc1532</sys_update_name>
+        <sys_update_name>sys_script_89340d37935e8b50b467f9f7dd03d6c2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-11 11:36:32</sys_updated_on>
+        <sys_updated_on>2026-08-04 09:35:38</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=ab1e47c012784c7282fb782bd9bc1532"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=89340d37935e8b50b467f9f7dd03d6c2"/>
 </record_update>

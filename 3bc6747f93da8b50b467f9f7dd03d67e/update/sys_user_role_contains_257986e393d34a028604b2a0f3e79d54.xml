@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
-  <sys_user_role_contains action="INSERT_OR_UPDATE">
-    <sys_id>257986e393d34a028604b2a0f3e79d54</sys_id>
-    <sys_scope display_value="x_1972253_citize_0">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
-    <sys_update_name>sys_user_role_contains_257986e393d34a028604b2a0f3e79d54</sys_update_name>
-    <contains name="x_1972253_citize_0.agent">082eb297ec3d4396ab235e801d0ad4a0</contains>
-    <role name="x_1972253_citize_0.admin">ab8e08cbd79b42bf88a3056b5127aa7a</role>
-  </sys_user_role_contains>
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="x_1972253_citize_0.agent" name="x_1972253_citize_0.agent">082eb297ec3d4396ab235e801d0ad4a0</contains>
+        <role display_value="x_1972253_citize_0.admin" name="x_1972253_citize_0.admin">88d6f47f93da8b50b467f9f7dd03d60f</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-11 11:37:33</sys_created_on>
+        <sys_id>257986e393d34a028604b2a0f3e79d54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1972253_citize_0.agent.x_1972253_citize_0.admin</sys_name>
+        <sys_package display_value="Citizen Complaint AI" source="x_1972253_citize_0">3bc6747f93da8b50b467f9f7dd03d67e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Citizen Complaint AI">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+        <sys_update_name>sys_user_role_contains_257986e393d34a028604b2a0f3e79d54</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-11 11:37:33</sys_updated_on>
+    </sys_user_role_contains>
 </record_update>

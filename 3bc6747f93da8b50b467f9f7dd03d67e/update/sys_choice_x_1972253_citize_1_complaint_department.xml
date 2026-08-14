@@ -1,77 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-  <sys_choice_set action="INSERT_OR_UPDATE" field="department" table="x_1972253_citize_1_complaint" version="3">
-    <sys_choice_set action="INSERT_OR_UPDATE">
-      <sys_id>4d846118ef0a439b9b7102176668f9b3</sys_id>
-      <element>department</element>
-      <name>x_1972253_citize_1_complaint</name>
-      <sys_class_name>sys_choice_set</sys_class_name>
-      <sys_scope display_value="x_1972253_citize_1">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
-      <sys_package display_value="x_1972253_citize_1" source="3bc6747f93da8b50b467f9f7dd03d67e">3bc6747f93da8b50b467f9f7dd03d67e</sys_package>
-      <sys_update_name>sys_choice_x_1972253_citize_1_complaint_department</sys_update_name>
-      <sys_name>department</sys_name>
-    </sys_choice_set>
-    <sys_choice action="INSERT_OR_UPDATE">
-      <sys_id>1461d5891724482291898d8f16d84ea3</sys_id>
-      <name>x_1972253_citize_1_complaint</name>
-      <element>department</element>
-      <label>Public Works</label>
-      <value>public_works</value>
-      <sequence>1</sequence>
-      <language>en</language>
+    <sys_choice action="INSERT_OR_UPDATE" field="department" table="x_1972253_citize_1_complaint" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>department</element>
+            <name>x_1972253_citize_1_complaint</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-11 11:44:13</sys_created_on>
+            <sys_id>4d846118ef0a439b9b7102176668f9b3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>department</sys_name>
+            <sys_package display_value="Citizen Complaint AI" source="x_1972253_citize_0">3bc6747f93da8b50b467f9f7dd03d67e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Citizen Complaint AI">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+            <sys_update_name>sys_choice_x_1972253_citize_1_complaint_department</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-11 11:44:13</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>department</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Public Works</label>
+            <language>en</language>
+            <name>x_1972253_citize_1_complaint</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-11 11:44:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1461d5891724482291898d8f16d84ea3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-11 11:44:13</sys_updated_on>
+            <value>public_works</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>department</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Sanitation</label>
+            <language>en</language>
+            <name>x_1972253_citize_1_complaint</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-11 11:44:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>72540c7626724c4fa6f2761cd62f1bc4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-11 11:44:14</sys_updated_on>
+            <value>sanitation</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>department</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Water &amp; Utilities</label>
+            <language>en</language>
+            <name>x_1972253_citize_1_complaint</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-11 11:44:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a868b93a4a404810bb44d1dcea35b012</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-11 11:44:14</sys_updated_on>
+            <value>utilities</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>department</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Police / Code Enforcement</label>
+            <language>en</language>
+            <name>x_1972253_citize_1_complaint</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-11 11:44:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0a093517e17849ffaaac05244c70ce6c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-11 11:44:14</sys_updated_on>
+            <value>police</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>department</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Parks &amp; Recreation</label>
+            <language>en</language>
+            <name>x_1972253_citize_1_complaint</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-11 11:44:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7f8a97e7e39b45c1b6941d4c2c8ac1b4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-11 11:44:14</sys_updated_on>
+            <value>parks</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>department</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Transportation</label>
+            <language>en</language>
+            <name>x_1972253_citize_1_complaint</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-11 11:44:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>28203f9491e64c319265ac0615764987</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-11 11:44:14</sys_updated_on>
+            <value>transportation</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>department</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>General Services</label>
+            <language>en</language>
+            <name>x_1972253_citize_1_complaint</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-11 11:44:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>75b1923dd4e94951987f00bb166caf16</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-11 11:44:14</sys_updated_on>
+            <value>general</value>
+        </sys_choice>
     </sys_choice>
-    <sys_choice action="INSERT_OR_UPDATE">
-      <sys_id>72540c7626724c4fa6f2761cd62f1bc4</sys_id>
-      <name>x_1972253_citize_1_complaint</name>
-      <element>department</element>
-      <label>Sanitation</label>
-      <value>sanitation</value>
-      <sequence>2</sequence>
-      <language>en</language>
-    </sys_choice>
-    <sys_choice action="INSERT_OR_UPDATE">
-      <sys_id>a868b93a4a404810bb44d1dcea35b012</sys_id>
-      <name>x_1972253_citize_1_complaint</name>
-      <element>department</element>
-      <label>Water &amp; Utilities</label>
-      <value>utilities</value>
-      <sequence>3</sequence>
-      <language>en</language>
-    </sys_choice>
-    <sys_choice action="INSERT_OR_UPDATE">
-      <sys_id>0a093517e17849ffaaac05244c70ce6c</sys_id>
-      <name>x_1972253_citize_1_complaint</name>
-      <element>department</element>
-      <label>Police / Code Enforcement</label>
-      <value>police</value>
-      <sequence>4</sequence>
-      <language>en</language>
-    </sys_choice>
-    <sys_choice action="INSERT_OR_UPDATE">
-      <sys_id>7f8a97e7e39b45c1b6941d4c2c8ac1b4</sys_id>
-      <name>x_1972253_citize_1_complaint</name>
-      <element>department</element>
-      <label>Parks &amp; Recreation</label>
-      <value>parks</value>
-      <sequence>5</sequence>
-      <language>en</language>
-    </sys_choice>
-    <sys_choice action="INSERT_OR_UPDATE">
-      <sys_id>28203f9491e64c319265ac0615764987</sys_id>
-      <name>x_1972253_citize_1_complaint</name>
-      <element>department</element>
-      <label>Transportation</label>
-      <value>transportation</value>
-      <sequence>6</sequence>
-      <language>en</language>
-    </sys_choice>
-    <sys_choice action="INSERT_OR_UPDATE">
-      <sys_id>75b1923dd4e94951987f00bb166caf16</sys_id>
-      <name>x_1972253_citize_1_complaint</name>
-      <element>department</element>
-      <label>General Services</label>
-      <value>general</value>
-      <sequence>7</sequence>
-      <language>en</language>
-    </sys_choice>
-  </sys_choice_set>
 </record_update>

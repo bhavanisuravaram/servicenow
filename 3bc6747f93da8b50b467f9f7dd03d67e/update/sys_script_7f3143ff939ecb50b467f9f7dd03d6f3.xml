@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1972253_citize_0_citizen_complaint</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>AI Recommendation Generator</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[switch(current.category.toString()) {
+
+    case "water_leakage":
+        current.ai_recommendation =
+        "Dispatch Water Supply Department.\n" +
+        "Inspect nearby pipeline.\n" +
+        "Close nearest valve.\n" +
+        "Expected resolution: 24 hours.";
+        break;
+
+    case "street_light":
+        current.ai_recommendation =
+        "Assign Electrical Department.\n" +
+        "Inspect power supply.\n" +
+        "Replace damaged bulb.\n" +
+        "Expected resolution: 24 hours.";
+        break;
+
+    case "garbage":
+        current.ai_recommendation =
+        "Notify Sanitation Team.\n" +
+        "Collect garbage.\n" +
+        "Clean surrounding area.\n" +
+        "Expected resolution: 12 hours.";
+        break;
+
+    case "drainage":
+        current.ai_recommendation =
+        "Assign Sanitation Department.\n" +
+        "Remove blockage.\n" +
+        "Clean drainage line.\n" +
+        "Expected resolution: 48 hours.";
+        break;
+
+    case "road_damage":
+        current.ai_recommendation =
+        "Assign Road Maintenance Team.\n" +
+        "Repair potholes.\n" +
+        "Expected resolution: 3-5 days.";
+        break;
+
+    default:
+        current.ai_recommendation =
+        "Review complaint manually and assign the appropriate department.";
+}]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-01 15:16:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7f3143ff939ecb50b467f9f7dd03d6f3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>AI Recommendation Generator</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Citizen Complaint AI" source="x_1972253_citize_0">3bc6747f93da8b50b467f9f7dd03d67e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Citizen Complaint AI">3bc6747f93da8b50b467f9f7dd03d67e</sys_scope>
+        <sys_update_name>sys_script_7f3143ff939ecb50b467f9f7dd03d6f3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-01 15:21:45</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=7f3143ff939ecb50b467f9f7dd03d6f3"/>
+</record_update>
